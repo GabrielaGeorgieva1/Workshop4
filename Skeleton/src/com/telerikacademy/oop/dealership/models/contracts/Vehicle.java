@@ -2,7 +2,7 @@ package com.telerikacademy.oop.dealership.models.contracts;
 
 import com.telerikacademy.oop.dealership.models.enums.VehicleType;
 
-public interface Vehicle {
+public interface Vehicle extends Priceable,Commentable {
 
     int getWheels();
 

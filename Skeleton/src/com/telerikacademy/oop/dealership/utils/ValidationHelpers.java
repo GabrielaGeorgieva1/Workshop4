@@ -13,6 +13,12 @@ public class ValidationHelpers {
             throw new IllegalArgumentException(message);
         }
     }
+    public static void validateStringRange(String value, int min, int max, String message) {
+        if (value.length() < min || value.length() > max) {
+            throw new IllegalArgumentException(message);
+        }
+    }
+
 
     public static void validateDecimalRange(double value, double min, double max, String message) {
         if (value < min || value > max) {
